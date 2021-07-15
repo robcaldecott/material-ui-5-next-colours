@@ -1,24 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import Box from "@material-ui/core/Box";
+import yellow from "@material-ui/core/colors/yellow";
+import grey from "@material-ui/core/colors/grey";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box sx={{ backgroundColor: yellow[500], color: grey[900], padding: 4 }}>
+      Yellow box
+    </Box>
   );
 }
 
